@@ -22,9 +22,9 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li>
-            <a id="lg-bag" href="cart.html"
+            <a id="lg-bag" class="active" href="cart.html"
               ><i class="far fa-shopping-bag"></i
             ></a>
           </li>
@@ -45,98 +45,78 @@
       <p>Leave a message,We will like to hear from you</p>
     </section>
 
-    <section id="contact-details" class="section-p1">
-      <div class="details">
-        <span>GET IN TOUCH</span>
-        <h2>VISIT US</h2>
-        <h3>HEAD OFFICE</h3>
-        <div>
-          <li>
-            <i class="fal fa-map"></i>
-            <p>Kathmandu Jorpati</p>
-          </li>
-          <li>
-            <i class="fal fa-envelope"></i>
-            <p>Kathmandu Jorpati</p>
-          </li>
-          <li>
-            <i class="fal fa-phone-alt"></i>
-            <p>Kathmandu Jorpati</p>
-          </li>
-          <li>
-            <i class="fal fa-clock"></i>
-            <p>Kathmandu Jorpati</p>
-          </li>
-        </div>
-      </div>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28253.844100429746!2d85.36262134343664!3d27.72560569817669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bbeb021a8c3%3A0xf5da322eefd636cd!2sJorpati%2C%2044600!5e0!3m2!1sen!2snp!4v1680972760868!5m2!1sen!2snp"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href=""> <i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/f1.jpg" alt="" /></td>
+            <td>Down tshirt</td>
+            <td>Rs1000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Subtotal</td>
+          </tr>
+          <tr>
+            <td>
+              <a href=""> <i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/f1.jpg" alt="" /></td>
+            <td>Down tshirt</td>
+            <td>Rs1000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Subtotal</td>
+          </tr>
+          <tr>
+            <td>
+              <a href=""> <i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/f1.jpg" alt="" /></td>
+            <td>Down tshirt</td>
+            <td>Rs1000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Subtotal</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
-    <section id="form-details">
-      <form action="">
-        <span>Leave a message</span>
-        <h2>We love to hear from you</h2>
-        <input type="text" placeholder="Your Name" />
-        <input type="text" placeholder="E-Mail" />
-        <input type="text" placeholder="Subject" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <button class="normal">Submit</button>
-      </form>
-      <div class="people">
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
         <div>
-          <img src="img/people/1.png" alt="" />
-          <p>
-            <span>Dupy 07</span> Senior Marketting Manager <br />
-            Phone: +977 1234567891 <br />
-            Email:abc@gmail.com
-          </p>
-        </div>
-        <div>
-          <img src="img/people/1.png" alt="" />
-          <p>
-            <span>Dupy 07</span> Senior Marketting Manager <br />
-            Phone: +977 1234567891 <br />
-            Email:abc@gmail.com
-          </p>
-        </div>
-        <div>
-          <img src="img/people/1.png" alt="" />
-          <p>
-            <span>Dupy 07</span> Senior Marketting Manager <br />
-            Phone: +977 1234567891 <br />
-            Email:abc@gmail.com
-          </p>
+          <input type="text" placeholder="Enter Your Coupon" />
+          <button class="normal">Apply</button>
         </div>
       </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>Sign Up for newsletter</h4>
-        <p>
-          Get email updates about our latest shop and
-          <span>special offers.</span>
-        </p>
-      </div>
-      <div class="form">
-        <input type="text" placeholder="Your email address" />
-        <button class="normal">Sign Up</button>
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>Rs 1000</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>Rs 1000</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
       </div>
     </section>
 
